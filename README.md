@@ -120,24 +120,6 @@ Perform operations on quantities with automatic unit handling
 
 ---
 
-## 🚦 Getting Started
-
-> 📦 **Coming Soon!** Setup instructions and quick start guide will be added as the project progresses.
-
-<div align="center">
-
-### ⚡ Quick Preview
-
-```bash
-# Installation (Coming Soon)
-npm install quantity-measurement-app
-
-# Basic Usage Example
-const measurement = new Quantity(100, 'meters');
-measurement.convertTo('feet'); // Returns equivalent in feet
-```
-
-</div>
 
 <br>
 
