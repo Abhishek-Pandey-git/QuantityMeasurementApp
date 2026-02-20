@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 //importing class to be tested
 import  com.app.quantitymeasurementapp.QuantityMeasurementApp.QuantityMeasurementApp.Feet;
 
+//import inches class
+import  com.app.quantitymeasurementapp.QuantityMeasurementApp.QuantityMeasurementApp.Inches;
+
 
 public class FeetEqualityTest {
 	@Test
@@ -37,5 +40,33 @@ public class FeetEqualityTest {
         // Verifies that a numerical value is equal to itself (reflexive property).
         Feet feet = new Feet(1.0);
         assertEquals(feet, feet);
+    }
+    
+    //Tests for inches
+    @Test
+    public void testInchesEquality_SameValue() {
+    	assertEquals(new Inches(1.0),new Inches(1.0));
+    	
+    }
+    
+    @Test
+    public void testInchesEquality_DifferentVlaue() {
+    	assertNotEquals(new Inches(1.0),new Inches(2.0));
+    }
+    
+    @Test
+    public void testInchesEquality_NullComparison() {
+        assertNotEquals(null, new Inches(1.0));
+    }
+
+    @Test
+    public void testInchesEquality_DifferentClass() {
+        assertNotEquals(new Inches(1.0), "1.0");
+    }
+
+    @Test
+    public void testInchesEquality_SameReference() {
+        Inches inches = new Inches(1.0);
+        assertEquals(inches, inches);
     }
 }
