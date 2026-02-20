@@ -91,10 +91,14 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 <tr>
-<td align="center">⏳ <b>Day 2</b><br><sub>Coming Soon</sub></td>
+<td align="center">⏳ <b>Day 2</b><br><sub>20 Feb 2026</sub></td>
 <td>
 
-- 🔜 Updates will be added as development progresses
+- 📌 Added Quantity measurement class with Feet inner class that contains the comparison logic. <br>
+  [QuantityMeasurementlass](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC1-FeetEquality/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added QuantityMeasurementAppTest class with test cases for Feet equality. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC1-FeetEquality/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
 </td>
 </tr>
