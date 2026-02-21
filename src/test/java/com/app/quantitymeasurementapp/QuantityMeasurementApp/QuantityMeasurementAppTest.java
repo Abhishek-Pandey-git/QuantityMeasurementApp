@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import  com.app.quantitymeasurementapp.QuantityMeasurementApp.QuantityMeasurementApp.Feet;
 
 
-public class FeetEqualityTest {
+public class QuantityMeasurementAppTest {
 	@Test
     public void testFeetEquality_SameValue() {
         // Verifies that two numerical values of 1.0 ft are considered equal.
