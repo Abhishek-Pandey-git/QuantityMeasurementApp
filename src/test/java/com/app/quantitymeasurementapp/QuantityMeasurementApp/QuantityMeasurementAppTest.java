@@ -10,7 +10,7 @@ import  com.app.quantitymeasurementapp.QuantityMeasurementApp.QuantityMeasuremen
 import  com.app.quantitymeasurementapp.QuantityMeasurementApp.QuantityMeasurementApp.Inches;
 
 
-public class FeetEqualityTest {
+public class QuantityMeasurementAppTest {
 	@Test
     public void testFeetEquality_SameValue() {
         // Verifies that two numerical values of 1.0 ft are considered equal.
