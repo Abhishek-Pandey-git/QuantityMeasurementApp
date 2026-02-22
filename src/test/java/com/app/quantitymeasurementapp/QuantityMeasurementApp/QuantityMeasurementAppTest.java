@@ -6,6 +6,16 @@ import static org.junit.jupiter.api.Assertions.*;
 //importing class to be tested
 import com.app.quantitymeasurementapp.QuantityMeasurementApp.Length.LengthUnit;
 
+/**
+ * QuantityMeasurementAppUC6Test
+ *
+ * Test class for UC6 – Addition Operations Between Length Measurements
+ * Validates the addition operations performed on different length measurements.
+ *
+ * @author Developer
+ * @version 6.0
+ */
+
 public class QuantityMeasurementAppTest {
 
     // Same unit and same value comparison
@@ -102,5 +112,100 @@ public class QuantityMeasurementAppTest {
         // Wait, because we rounded to 2 decimal places in our logic, let's use the values from your screenshot!
         // 100 CM = 39.3701 INCHES
         assertEquals(new Length(100.0, LengthUnit.CENTIMETERS), new Length(39.3701, LengthUnit.INCHES));
+    }
+    
+ // ==========================================
+    // --- UC5: EXPLICIT CONVERSION TESTS ---
+    // ==========================================
+
+    private static final double EPSILON = 1e-6;
+
+    @Test
+    public void testConversion_FeetToInches() {
+        double result = QuantityMeasurementApp.convert(1.0, LengthUnit.FEET, LengthUnit.INCHES);
+        assertEquals(12.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_InchesToFeet() {
+        double result = QuantityMeasurementApp.convert(24.0, LengthUnit.INCHES, LengthUnit.FEET);
+        assertEquals(2.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_YardsToInches() {
+        double result = QuantityMeasurementApp.convert(1.0, LengthUnit.YARDS, LengthUnit.INCHES);
+        assertEquals(36.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_InchesToYards() {
+        double result = QuantityMeasurementApp.convert(72.0, LengthUnit.INCHES, LengthUnit.YARDS);
+        assertEquals(2.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_CentimetersToInches() {
+        double result = QuantityMeasurementApp.convert(2.54, LengthUnit.CENTIMETERS, LengthUnit.INCHES);
+        // 2.54 cm is roughly 1.0 inch based on our conversion factor
+        assertEquals(1.0, result, 0.01); // Slightly larger epsilon for standard CM rounding tolerance
+    }
+
+    @Test
+    public void testConversion_FeatToYard() {
+        double result = QuantityMeasurementApp.convert(6.0, LengthUnit.FEET, LengthUnit.YARDS);
+        assertEquals(2.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_RoundTrip_PreservesValue() {
+        double originalValue = 5.0;
+        // convert(convert(v, A, B), B, A) ≈ v
+        double inInches = QuantityMeasurementApp.convert(originalValue, LengthUnit.YARDS, LengthUnit.INCHES);
+        double backToYards = QuantityMeasurementApp.convert(inInches, LengthUnit.INCHES, LengthUnit.YARDS);
+        assertEquals(originalValue, backToYards, EPSILON);
+    }
+
+    @Test
+    public void testConversion_ZeroValue() {
+        double result = QuantityMeasurementApp.convert(0.0, LengthUnit.FEET, LengthUnit.INCHES);
+        assertEquals(0.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_NegativeValue() {
+        double result = QuantityMeasurementApp.convert(-1.0, LengthUnit.FEET, LengthUnit.INCHES);
+        assertEquals(-12.0, result, EPSILON);
+    }
+
+    @Test
+    public void testConversion_InvalidUnit_Throws() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            QuantityMeasurementApp.convert(1.0, LengthUnit.FEET, null);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            QuantityMeasurementApp.convert(1.0, null, LengthUnit.INCHES);
+        });
+    }
+
+    @Test
+    public void testConversion_NaNOrInfinite_Throws() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            QuantityMeasurementApp.convert(Double.NaN, LengthUnit.FEET, LengthUnit.INCHES);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            QuantityMeasurementApp.convert(Double.POSITIVE_INFINITY, LengthUnit.FEET, LengthUnit.INCHES);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            QuantityMeasurementApp.convert(Double.NEGATIVE_INFINITY, LengthUnit.FEET, LengthUnit.INCHES);
+        });
+    }
+
+    @Test
+    public void testConversion_PrecisionTolerance() {
+        double result = QuantityMeasurementApp.convert(1.0, LengthUnit.FEET, LengthUnit.INCHES);
+        // This explicitly proves the epsilon works. 
+        // 12.0 is equal to 12.0000001 within the 1e-6 (0.000001) tolerance.
+        assertEquals(12.0000001, result, EPSILON);
     }
 }
