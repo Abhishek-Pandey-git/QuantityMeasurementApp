@@ -124,6 +124,11 @@ Perform operations on quantities with automatic unit handling
   <br>
 - Added updated QuantityMeasurementAppTest class with test all available units for equallity and changeability. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC4-YardEquality/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+- Added UC5 with feature to convert units between the two types <br>
+  [Length and QuantityManagement class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+- Added updated QuantityMeasurementAppTest class with test cases for unit conversion. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
 </td>
 </tr>
