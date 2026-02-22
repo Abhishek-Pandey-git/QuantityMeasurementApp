@@ -101,6 +101,31 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
+
+<td align="center">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
+<td>
+
+- 📌 Added User Case 3 with feature to have a generic class for length and centralised comparison logic. <br>
+  [Generic Class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC3-GenericLength/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for Feet equality. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC3-GenericLength/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+</td>
+</tr>
+
+<tr>
+<td align="center">⏳ <b>Day 4</b><br><sub>22 Feb 2026</sub></td>
+<td>
+
+- 📌 Added User Case 4 with feature to have a YARDS and CENTIMETERS conversions logic. <br>
+  [Generic Class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC4-YardEquality/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test all available units for equallity and changeability. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC4-YardEquality/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+</td>
+</tr>
 </table>
 
 <br>
@@ -123,24 +148,8 @@ Perform operations on quantities with automatic unit handling
 
 ---
 
-## 🚦 Getting Started
 
-> 📦 **Coming Soon!** Setup instructions and quick start guide will be added as the project progresses.
 
-<div align="center">
-
-### ⚡ Quick Preview
-
-```bash
-# Installation (Coming Soon)
-npm install quantity-measurement-app
-
-# Basic Usage Example
-const measurement = new Quantity(100, 'meters');
-measurement.convertTo('feet'); // Returns equivalent in feet
-```
-
-</div>
 
 <br>
 
