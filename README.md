@@ -101,7 +101,6 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
-
 <td align="center">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
 <td>
 
@@ -147,8 +146,6 @@ Perform operations on quantities with automatic unit handling
 <br>
 
 ---
-
-
 
 
 <br>
