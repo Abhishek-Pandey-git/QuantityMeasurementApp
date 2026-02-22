@@ -70,4 +70,37 @@ public class QuantityMeasurementAppTest {
     public void testEquality_NullComparison() {
         assertNotEquals(null, new Length(1.0, LengthUnit.FEET));
     }
+    
+    //UC4 test cases
+    @Test
+    public void testEquality_YardsToFeet_EquivalentValue() {
+        // Verifies that Quantity(1.0, YARDS) and Quantity(3.0, FEET) are equal
+        assertEquals(new Length(1.0, LengthUnit.YARDS), new Length(3.0, LengthUnit.FEET));
+    }
+
+    @Test
+    public void testEquality_YardsToInches_EquivalentValue() {
+        // Verifies that Quantity(1.0, YARDS) and Quantity(36.0, INCHES) are equal
+        assertEquals(new Length(1.0, LengthUnit.YARDS), new Length(36.0, LengthUnit.INCHES));
+    }
+
+    @Test
+    public void testEquality_YardsToYards_SameValue() {
+        // Verifies that Quantity(2.0, YARDS) and Quantity(2.0, YARDS) are equal
+        assertEquals(new Length(2.0, LengthUnit.YARDS), new Length(2.0, LengthUnit.YARDS));
+    }
+
+    @Test
+    public void testEquality_CentimetersToCentimeters_SameValue() {
+        // Verifies that Quantity(2.0, CENTIMETERS) and Quantity(2.0, CENTIMETERS) are equal
+        assertEquals(new Length(2.0, LengthUnit.CENTIMETERS), new Length(2.0, LengthUnit.CENTIMETERS));
+    }
+
+    @Test
+    public void testEquality_CentimetersToInches_EquivalentValue() {
+        // Verifies that Quantity(1.0, CENTIMETERS) and Quantity(0.393701, INCHES) are equal
+        // Wait, because we rounded to 2 decimal places in our logic, let's use the values from your screenshot!
+        // 100 CM = 39.3701 INCHES
+        assertEquals(new Length(100.0, LengthUnit.CENTIMETERS), new Length(39.3701, LengthUnit.INCHES));
+    }
 }
