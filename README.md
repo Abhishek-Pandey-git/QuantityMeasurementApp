@@ -101,7 +101,6 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
-
 <td align="center">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
 <td>
 
@@ -129,8 +128,16 @@ Perform operations on quantities with automatic unit handling
 - Added updated QuantityMeasurementAppTest class with test cases for unit conversion. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
+- Added UC5 with feature to convert units between the two types <br>
+  [Length and QuantityManagement class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+- Added updated QuantityMeasurementAppTest class with test cases for unit conversion. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
 </td>
 </tr>
+
+
 </table>
 
 <br>
@@ -152,8 +159,6 @@ Perform operations on quantities with automatic unit handling
 <br>
 
 ---
-
-
 
 
 <br>
