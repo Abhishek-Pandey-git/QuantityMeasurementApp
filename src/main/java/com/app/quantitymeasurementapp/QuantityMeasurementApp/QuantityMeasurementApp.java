@@ -1,6 +1,6 @@
 package com.app.quantitymeasurementapp.QuantityMeasurementApp;
 
-import com.app.quantitymeasurementapp.QuantityMeasurementApp.LengthUnit;
+//import com.app.quantitymeasurementapp.QuantityMeasurementApp.LengthUnit;
 
 /**
  * UC5 - QuantityMeasurementApp - Extended Unit Support with Conversion
@@ -116,17 +116,82 @@ public class QuantityMeasurementApp {
         return sumLength;
     }
     
+ // ==========================================
+    // --- WEIGHT FUNCTIONALITY (UC9) ---
+    // ==========================================
+
+    public static boolean demonstrateWeightEquality(Weight weight1, Weight weight2) {
+        return weight1.equals(weight2);
+    }
+
+    public static boolean demonstrateWeightComparison(double value1, WeightUnit unit1, double value2, WeightUnit unit2) {
+        Weight weight1 = new Weight(value1, unit1);
+        Weight weight2 = new Weight(value2, unit2);
+        boolean result = demonstrateWeightEquality(weight1, weight2);
+        System.out.println("Input: Quantity(" + value1 + ", " + unit1 + ") and Quantity(" + value2 + ", " + unit2 + ")");
+        System.out.println("Output: Equal (" + result + ")\n");
+        return result;
+    }
+
+    public static Weight demonstrateWeightConversion(double value, WeightUnit fromUnit, WeightUnit toUnit) {
+        Weight initialWeight = new Weight(value, fromUnit);
+        Weight convertedWeight = initialWeight.convertTo(toUnit);
+        System.out.println("Input: convert(" + value + ", " + fromUnit + ", " + toUnit + ")");
+        System.out.println("Output: " + convertedWeight + "\n");
+        return convertedWeight;
+    }
+
+    public static Weight demonstrateWeightConversion(Weight weight, WeightUnit toUnit) {
+        Weight convertedWeight = weight.convertTo(toUnit);
+        System.out.println("Input: convert(" + weight.toString() + " to " + toUnit + ")");
+        System.out.println("Output: " + convertedWeight + "\n");
+        return convertedWeight;
+    }
+
+    public static double convert(double value, WeightUnit source, WeightUnit target) {
+        if (source == null || target == null) {
+            throw new IllegalArgumentException("Source and target units must not be null");
+        }
+        if (Double.isNaN(value) || Double.isInfinite(value)) {
+            throw new IllegalArgumentException("Value must be a valid, finite number");
+        }
+        double baseValue = source.convertToBaseUnit(value);
+        return target.convertFromBaseUnit(baseValue);
+    }
+
+    public static Weight demonstrateWeightAddition(Weight weight1, Weight weight2) {
+        return weight1.add(weight2);
+    }
+
+    public static Weight demonstrateWeightAddition(Weight weight1, Weight weight2, WeightUnit targetUnit) {
+        Weight sumWeight = weight1.add(weight2, targetUnit);
+        System.out.println("Input: add(" + weight1.toString() + ", " + weight2.toString() + ", " + targetUnit + ") -> Output: " + sumWeight.toString());
+        return sumWeight;
+    }
+    
+    // ==========================================
+    // --- STANDALONE TESTING ---
+    // ==========================================
+
     public static void main(String[] args) {
-        System.out.println("--- UC5 Conversion Demonstrations ---\n");
+        System.out.println("--- UC8 Standalone Length Demonstrations ---\n");
+        Length oneFoot = new Length(1.0, LengthUnit.FEET);
+        Length twelveInches = new Length(12.0, LengthUnit.INCHES);
+        demonstrateLengthAddition(oneFoot, twelveInches, LengthUnit.FEET);
+        demonstrateLengthConversion(oneFoot, LengthUnit.INCHES);
+
+        System.out.println("\n--- UC9 Standalone Weight Demonstrations ---\n");
+        Weight oneKg = new Weight(1.0, WeightUnit.KILOGRAM);
+        Weight thousandGrams = new Weight(1000.0, WeightUnit.GRAM);
+        Weight pounds = new Weight(2.20462, WeightUnit.POUND);
         
-        // Using Overload 1 (Raw values)
-        demonstrateLengthConversion(1.0, LengthUnit.FEET, LengthUnit.INCHES);
-        demonstrateLengthConversion(3.0, LengthUnit.YARDS, LengthUnit.FEET);
-        demonstrateLengthConversion(36.0, LengthUnit.INCHES, LengthUnit.YARDS);
-        demonstrateLengthConversion(100.0, LengthUnit.CENTIMETERS, LengthUnit.INCHES);
+        System.out.println("1. Equality Demo:");
+        demonstrateWeightComparison(1.0, WeightUnit.KILOGRAM, 1000.0, WeightUnit.GRAM);
         
-        // Using Overload 2 (Object pass-through)
-        Length myFeet = new Length(5.0, LengthUnit.FEET);
-        demonstrateLengthConversion(myFeet, LengthUnit.INCHES);
+        System.out.println("2. Conversion Demo:");
+        demonstrateWeightConversion(pounds, WeightUnit.KILOGRAM);
+        
+        System.out.println("3. Addition Demo:");
+        demonstrateWeightAddition(oneKg, thousandGrams, WeightUnit.KILOGRAM);
     }
 }
