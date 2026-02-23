@@ -101,6 +101,7 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
+<tr>
 <td align="center">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
 <td>
 
@@ -133,6 +134,20 @@ Perform operations on quantities with automatic unit handling
 
 - Added updated QuantityMeasurementAppTest class with test cases for unit conversion. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+</td>
+</tr>
+
+
+<tr>
+<td align="center">⏳ <b>Day 5</b><br><sub>23 Feb 2026</sub></td>
+<td>
+
+- 📌 Added User Case 3 with feature to have a generic class for length and centralised comparison logic. <br>
+  [Length Class with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for Feet equality. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
 </td>
 </tr>
