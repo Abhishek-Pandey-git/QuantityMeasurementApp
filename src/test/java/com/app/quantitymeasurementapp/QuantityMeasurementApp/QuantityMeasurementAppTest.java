@@ -146,7 +146,7 @@ public class QuantityMeasurementAppTest {
     public void testConversion_CentimetersToInches() {
         double result = QuantityMeasurementApp.convert(2.54, LengthUnit.CENTIMETERS, LengthUnit.INCHES);
         // 2.54 cm is roughly 1.0 inch based on our conversion factor
-        assertEquals(1.0, result, 0.01); // Slightly larger epsilon for standard CM rounding tolerance
+        assertEquals(1.0, result, 0.01); // Slightly larger epsilon for standard CM rounding
     }
 
     @Test
