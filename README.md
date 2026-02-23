@@ -157,6 +157,14 @@ Perform operations on quantities with automatic unit handling
   <br>
 - Added updated Test class with test cases for UC8. <br>
   [UC8-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC8-StandaloneUnit/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+  <hr>
+
+  - 📌 Added User Case 9 with feature to have a separate Enum unit class for weight and separate concern for centralised methods. <br>
+  [Weight Class, Weight Unit Enum with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC9-WeightMeasurement/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated Test class with test cases for UC9. <br>
+  [UC9-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC9-WeightMeasurement/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
 
