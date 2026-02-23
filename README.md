@@ -149,6 +149,13 @@ Perform operations on quantities with automatic unit handling
 - Added updated QuantityMeasurementAppTest class with test cases for unit addition. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
+  <hr>
+
+  - 📌 Added User Case 7 with feature to have a generic class for length and separate concern for centralised method and . <br>
+  [Length Class with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC7-TargetUnitAddition/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for unit addition. <br>
+  [UC7-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC7-TargetUnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
 
