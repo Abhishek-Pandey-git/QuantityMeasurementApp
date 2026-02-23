@@ -101,7 +101,7 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
-
+<tr>
 <td align="center">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
 <td>
 
@@ -129,8 +129,15 @@ Perform operations on quantities with automatic unit handling
 - Added updated QuantityMeasurementAppTest class with test cases for unit conversion. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
+- Added UC5 with feature to convert units between the two types <br>
+  [Length and QuantityManagement class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+- Added updated QuantityMeasurementAppTest class with test cases for unit conversion. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC5-UnitConversion/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
 </td>
 </tr>
+
 
 <tr>
 <td align="center">⏳ <b>Day 5</b><br><sub>23 Feb 2026</sub></td>
@@ -142,7 +149,7 @@ Perform operations on quantities with automatic unit handling
 - Added updated QuantityMeasurementAppTest class with test cases for unit addition. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
-<hr>
+  <hr>
 
   - 📌 Added User Case 7 with feature to have a generic class for length and separate concern for centralised method and . <br>
   [Length Class with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC7-TargetUnitAddition/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -151,6 +158,7 @@ Perform operations on quantities with automatic unit handling
   [UC7-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC7-TargetUnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
+
 
 </table>
 
@@ -173,8 +181,6 @@ Perform operations on quantities with automatic unit handling
 <br>
 
 ---
-
-
 
 
 <br>
