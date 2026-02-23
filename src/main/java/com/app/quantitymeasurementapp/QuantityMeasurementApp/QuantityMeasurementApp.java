@@ -94,6 +94,28 @@ public class QuantityMeasurementApp {
         return sumLength;
     }
     
+    
+    /**
+     * Demonstrate addition of second QuantityLength to first QuantityLength
+     * with an explicitly specified target unit.
+     *
+     * @param length1 the first QuantityLength instance
+     * @param length2 the second QuantityLength instance
+     * @param targetUnit the target unit for the result
+     * @return a new Length instance representing the sum of the two lengths in the target unit
+     */
+    public static Length demonstrateLengthAddition(Length length1, Length length2, Length.LengthUnit targetUnit) {
+        
+        // 1. Call the new overloaded UC7 add() method from your Length class
+        Length sumLength = length1.add(length2, targetUnit);
+        
+        // 2. Print the operation to the console to match the UC7 Example Output
+        System.out.println("Input: add(" + length1.toString() + ", " + length2.toString() + ", " + targetUnit + ") -> Output: " + sumLength.toString());
+        
+        // 3. Return the result
+        return sumLength;
+    }
+    
     public static void main(String[] args) {
         System.out.println("--- UC5 Conversion Demonstrations ---\n");
         
