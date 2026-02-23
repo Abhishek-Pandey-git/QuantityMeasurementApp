@@ -156,26 +156,7 @@ public class QuantityMeasurementAppTest {
     	return args.stream();
     }
     
-// // The DYNAMIC Data Factory Method for Conversions
-//    private static Stream<Arguments> provideDataForConversionMatrix() {
-//        java.util.List<Arguments> arguments = new java.util.ArrayList<>();
-//
-//        // We use 12.0 as a base value because it scales cleanly with our units
-//        double inputValue = 12.0; 
-//
-//        for (Length.LengthUnit sourceUnit : Length.LengthUnit.values()) {
-//            for (Length.LengthUnit targetUnit : Length.LengthUnit.values()) {
-//                
-//                // Calculate the mathematically perfect expected value
-//                double expectedValue = (inputValue * sourceUnit.getConversionFactor()) / targetUnit.getConversionFactor();
-//                expectedValue = Math.round(expectedValue * 100.0) / 100.0;
-//                
-//                arguments.add(Arguments.of(inputValue, sourceUnit, expectedValue, targetUnit));
-//            }
-//        }
-//        
-//        return arguments.stream();
-//    }
+
 
     @Test
     public void testConversion_RoundTrip_PreservesValue() {
