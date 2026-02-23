@@ -131,6 +131,20 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
+
+<tr>
+<td align="center">⏳ <b>Day 5</b><br><sub>23 Feb 2026</sub></td>
+<td>
+
+- 📌 Added User Case 6 with feature to have a generic class for length and centralised addition logic. <br>
+  [Length Class with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for unit addition. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+</td>
+</tr>
+
 </table>
 
 <br>
