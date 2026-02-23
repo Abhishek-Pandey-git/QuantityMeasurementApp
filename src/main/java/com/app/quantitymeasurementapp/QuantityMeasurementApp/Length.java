@@ -28,7 +28,7 @@ public class Length {
      * The base unit for conversion is inches.
      */
     public enum LengthUnit {
-        FEET(12.0),
+    	FEET(12.0),
         INCHES(1.0),
         YARDS(36.0),
         CENTIMETERS(0.393701);
@@ -42,6 +42,7 @@ public class Length {
         public double getConversionFactor() {
             return conversionFactor;
         }
+        
     }
 
     public Length(double value, LengthUnit unit) {
