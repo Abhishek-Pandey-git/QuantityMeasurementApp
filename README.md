@@ -165,6 +165,14 @@ Perform operations on quantities with automatic unit handling
   <br>
 - Added updated Test class with test cases for UC9. <br>
   [UC9-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC9-WeightMeasurement/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+   <hr>
+
+  - 📌 Added User Case 10 with feature to have a interface for contract to enums and also the Quantity Generic class and generic methods. <br>
+  [IMeasurable Interface and ENUMS](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC10-GenrricQuantity/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated Test class with test cases for UC10. <br>
+  [UC10-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC10-Interface/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
 
