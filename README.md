@@ -149,6 +149,14 @@ Perform operations on quantities with automatic unit handling
   <br>
 - Added updated QuantityMeasurementAppTest class with test cases for unit addition. <br>
   [UC7-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC7-TargetUnitAddition/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+   <hr>
+
+- 📌 Added User Case 8 with feature to have a separate Enum unit lass class for length and separate concern for centralised methods. <br>
+  [Length Class, Length Unit Enum with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC8-StandaloneUnit/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated Test class with test cases for UC8. <br>
+  [UC8-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC8-StandaloneUnit/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
 
