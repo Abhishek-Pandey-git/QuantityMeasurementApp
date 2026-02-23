@@ -37,10 +37,10 @@ public class Quantity<U extends IMeasurable> {
         @SuppressWarnings("unchecked")
         Quantity<U> typedThat = (Quantity<U>) that;
         
-        double thisBaseRounded = Math.round(this.convertToBaseUnit() * 100.0) / 100.0;
-        double thatBaseRounded = Math.round(typedThat.convertToBaseUnit() * 100.0) / 100.0;
+        double thisBase = this.convertToBaseUnit();
+        double thatBase = typedThat.convertToBaseUnit();
         
-        return Double.compare(thisBaseRounded, thatBaseRounded) == 0;
+        return Math.abs(thisBase - thatBase) <= 1e-6;
     }
 
     public Quantity<U> convertTo(U targetUnit) {
