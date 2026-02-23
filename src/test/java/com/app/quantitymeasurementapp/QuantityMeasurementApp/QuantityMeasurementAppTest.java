@@ -108,9 +108,7 @@ public class QuantityMeasurementAppTest {
 
     @Test
     public void testEquality_CentimetersToInches_EquivalentValue() {
-        // Verifies that Quantity(1.0, CENTIMETERS) and Quantity(0.393701, INCHES) are equal
-        // Wait, because we rounded to 2 decimal places in our logic, let's use the values from your screenshot!
-        // 100 CM = 39.3701 INCHES
+        // Verifies that Quantity(100.0, CENTIMETERS) and Quantity(39.3701, INCHES) are equal
         assertEquals(new Length(100.0, LengthUnit.CENTIMETERS), new Length(39.3701, LengthUnit.INCHES));
     }
     
@@ -148,7 +146,7 @@ public class QuantityMeasurementAppTest {
     public void testConversion_CentimetersToInches() {
         double result = QuantityMeasurementApp.convert(2.54, LengthUnit.CENTIMETERS, LengthUnit.INCHES);
         // 2.54 cm is roughly 1.0 inch based on our conversion factor
-        assertEquals(1.0, result, 0.01); // Slightly larger epsilon for standard CM rounding tolerance
+        assertEquals(1.0, result, 0.01); // Slightly larger epsilon for standard CM rounding
     }
 
     @Test
