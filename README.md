@@ -195,6 +195,16 @@ Perform operations on quantities with automatic unit handling
 - Added updated QuantityMeasurementAppTest class with test cases for Volume SUBTRACT and DIVIDE. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC12-SubtractDivide/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
+
+<hr>
+
+
+- 📌 Added User Case 13 with feature to have a seperate Enum ffor arithematic operation and refactored validation methods. <br>
+  [VALIDATION-AND-ENUM](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC12-CentralisedArithematic/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for updated code changes. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC12-CentralisedArithematic/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
 </td>
 </tr>
 
