@@ -175,6 +175,18 @@ Perform operations on quantities with automatic unit handling
   [UC10-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC10-Interface/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
+<tr>
+<td align="center">⏳ <b>Day 6</b><br><sub>24 Feb 2026</sub></td>
+<td>
+
+- 📌 Added User Case 11 with feature to have a VOLUME Enum. <br>
+  [GENERIC INTERFACE-VOLUME ENUM-QUANTITY CLASS](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC11-VolumeMeasurement/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for Volume EQUALITY, ADDITION and CONVERSION. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC11-VolumeMeasurement/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+</td>
+</tr>
 
 </table>
 
