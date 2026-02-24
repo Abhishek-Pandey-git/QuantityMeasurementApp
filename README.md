@@ -185,6 +185,16 @@ Perform operations on quantities with automatic unit handling
 - Added updated QuantityMeasurementAppTest class with test cases for Volume EQUALITY, ADDITION and CONVERSION. <br>
   [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC11-VolumeMeasurement/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 
+
+<hr>
+
+
+- 📌 Added User Case 12 with feature to have a Subtract and divide feature. <br>
+  [Subtract-Divide](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC12-SubtractDivide/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for Volume SUBTRACT and DIVIDE. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC12-SubtractDivide/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
 </td>
 </tr>
 
