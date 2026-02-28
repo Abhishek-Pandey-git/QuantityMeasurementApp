@@ -213,7 +213,18 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
+<tr>
+<td align="center">⏳ <b>Day 7</b><br><sub>27 Feb 2026</sub></td>
+<td>
 
+- 📌 Added User Case 14 with feature to support Temperature measurement, implementing selective arithmetic constraints via Functional Interfaces and Lambda expressions. <br>
+  [TemperatureUnit & Refactored Engine](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC14-TemperatureUnit/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+  <br>
+- Added updated QuantityMeasurementAppTest class with test cases for temperature equality, non-linear conversions, and UnsupportedOperation validation. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC14-TemperatureUnit/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
+
+</td>
+</tr>
 </table>
 
 <br>
