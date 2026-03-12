@@ -6,7 +6,7 @@ import com.app.quantitymeasurementapp.units.IMeasurable;
 /**
  * A comprehensive data holder for all aspects of a quantity measurement operation,
  * including operands, the operation type, the result, and error handling.
- * Designed to be serialized and stored in the repository.
+ *Designed to be serialized and stored  in the repository.
  */
 public class QuantityMeasurementEntity implements Serializable {
     
