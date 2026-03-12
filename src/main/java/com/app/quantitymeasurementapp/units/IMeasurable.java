@@ -22,6 +22,11 @@ public interface IMeasurable {
 	    // --- UC15 NEW METHODS ---
 	    
 	    /**
+	     * Get the name of this unit (e.g., "FEET", "CELSIUS").
+	     */
+	    public String getUnitName();
+	    
+	    /**
 	     * Get the Measurement Type (e.g., LengthUnit, WeightUnit) for this unit.
 	     * Essential for ensuring comparisons and conversions are between compatible types.
 	     */
