@@ -220,6 +220,19 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
+
+<tr>
+<td align="center">⏳ <b>Day 8</b><br><sub>13 March 2026</sub></td>
+<td>
+
+- 📌 Added Quantity measurement class with Feet inner class that contains the comparison logic. <br>
+  [QuantityMeasurementApp](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC15-NTierArchitectureRefactoring/src/main/java/com/app/quantitymeasurementapp)
+  <br>
+- Added QuantityMeasurementAppTest class with test cases for Feet equality. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC15-NTierArchitectureRefactoring/src/test/java/com/app/quantitymeasurementapp)
+
+</td>
+</tr>
 </table>
 
 <br>
