@@ -233,6 +233,39 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
+<tr>
+<td align="center">⏳ <b>Day 9</b><br><sub>16 March 2026</sub></td>
+<td>
+
+- 📌 Added UC16 with full Database Integration using JDBC — complete N-Tier architecture with controller, service, repository, entity, exception, unit, and util packages. <br>
+  [Full Source — UC16](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/main/java/com/app/quantitymeasurementapp)
+
+<hr>
+
+- 📌 Added custom `ConnectionPool.java` for managing a reusable fleet of JDBC connections with borrow, release, validate, and shutdown lifecycle. <br>
+- 📌 Added `ApplicationConfig.java` singleton configuration loader reading H2 database URL, credentials, pool size, and logging settings from `application.properties`. <br>
+  [Util Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/main/java/com/app/quantitymeasurementapp/util)
+
+<hr>
+
+- 📌 Added `IQuantityMeasurementRepository.java` interface, `QuantityMeasurementDatabaseRepository.java` (full JDBC CRUD implementation), and `QuantityMeasurementCacheRepository.java` (in-memory store for dev/testing). <br>
+  [Repository Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/main/java/com/app/quantitymeasurementapp/repository)
+
+<hr>
+
+- 📌 Added `IQuantityMeasurementService.java` and `QuantityMeasurementServiceImpl.java` orchestrating conversions, arithmetic, and result persistence via repository. <br>
+  [Service Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/main/java/com/app/quantitymeasurementapp/service)
+
+<hr>
+
+- 📌 Added `application.properties` for H2 database connection & pool config, and `schema.db` as the H2 database file with initial audit log schema. <br>
+  [Resources](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/main/resources)
+- Added updated `QuantityMeasurementAppTest` class. <br>
+  [QuantityMeasurementAppTest](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/test/java/com/app/quantitymeasurementapp)
+
+</td>
+</tr>
+
 </table>
 
 <br>
