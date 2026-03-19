@@ -266,6 +266,63 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
+<tr>
+<td align="center">⏳ <b>Day 10</b><br><sub>19 March 2026</sub></td>
+<td>
+
+- 📌 Added UC17 with Spring Framework Integration — migrated from JDBC to Spring Boot with complete Spring ecosystem integration. <br>
+  [Full Source — UC17](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp)
+
+<hr>
+
+- 📌 Added Spring Boot application configuration with `Application.java` and `QuantityMeasurementApplication.java` as entry points. <br>
+  [Application Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp)
+
+<hr>
+
+- 📌 Added `QuantityMeasurementController.java` providing REST API endpoints for quantity comparisons, conversions, and arithmetic operations. <br>
+  [Controller Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp/controller)
+
+<hr>
+
+- 📌 Refactored service layer with `IQuantityMeasurementService.java` interface and `QuantityMeasurementServiceImpl.java` using Spring dependency injection. <br>
+  [Service Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp/service)
+
+<hr>
+
+- 📌 Implemented Spring Data JPA with `QuantityMeasurementRepository.java` for seamless database operations. <br>
+- 📌 Added `QuantityMeasurementEntity.java` with JPA annotations for ORM mapping. <br>
+  [Repository & Entity Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp/repository)
+
+<hr>
+
+- 📌 Enhanced exception handling with `GlobalExceptionHandler.java` and `QuantityMeasurementException.java` for REST error responses. <br>
+  [Exception Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp/exception)
+
+<hr>
+
+- 📌 Added `SecurityConfig.java` with Spring Security configuration for API protection and authentication. <br>
+  [Config Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp/config)
+
+<hr>
+
+- 📌 Created comprehensive unit model with multiple enums (LengthUnit, WeightUnit, VolumeUnit, TemperatureUnit) and interfaces (IMeasurable, SupportsArithmetic). <br>
+  [Unit Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp/unit)
+
+<hr>
+
+- 📌 Added Maven configuration (`pom.xml`) with Spring Boot, Spring Data JPA, Spring Security, and JUnit dependencies. <br>
+- 📌 Added Maven wrapper scripts (`mvnw`, `mvnw.cmd`) for cross-platform build support. <br>
+  [Build Configuration](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration)
+
+<hr>
+
+- 📌 Created comprehensive test suite with `ApplicationTests.java` and `QuantityMeasurementServiceImplTest.java` validating service functionality. <br>
+  [Test Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/test/java/com/app/quantitymeasurementapp)
+
+</td>
+</tr>
+
 </table>
 
 <br>
