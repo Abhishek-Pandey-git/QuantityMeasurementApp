@@ -75,13 +75,13 @@ Perform operations on quantities with automatic unit handling
 ### 📝 Latest Updates
 
 <table>
-<tr>
-<td width="20%" align="center"><b>📆 Date</b></td>
-<td width="80%"><b>✨ Updates</b></td>
+<tr style="background-color: #f8f9fa;">
+<td width="20%" align="center" style="background-color: #f8f9fa;"><b>📆 Date</b></td>
+<td width="80%" style="background-color: #f8f9fa;"><b>✨ Updates</b></td>
 </tr>
-<tr>
-<td align="center">🚀 <b>Day 1</b><br><sub>Feb 19, 2026</sub></td>
-<td>
+<tr style="background-color: #e3f2fd;">
+<td align="center" style="background-color: #e3f2fd;">🚀 <b>Day 1</b><br><sub>Feb 19, 2026</sub></td>
+<td style="background-color: #e3f2fd;">
 
 - ✅ Project initialization
 - ✅ README setup with project structure
@@ -89,9 +89,9 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
-<tr>
-<td align="center">⏳ <b>Day 2</b><br><sub>20 Feb 2026</sub></td>
-<td>
+<tr style="background-color: #fff3e0;">
+<td align="center" style="background-color: #fff3e0;">⏳ <b>Day 2</b><br><sub>20 Feb 2026</sub></td>
+<td style="background-color: #fff3e0;">
 
 - 📌 Added Quantity measurement class with Feet inner class that contains the comparison logic. <br>
   [QuantityMeasurementlass](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC1-FeetEquality/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -102,8 +102,9 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
-<td align="center">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
-<td>
+<tr style="background-color: #e3f2fd;">
+<td align="center" style="background-color: #e3f2fd;">⏳ <b>Day 3</b><br><sub>21 Feb 2026</sub></td>
+<td style="background-color: #e3f2fd;">
 
 - 📌 Added User Case 3 with feature to have a generic class for length and centralised comparison logic. <br>
   [Generic Class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC3-GenericLength/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -114,9 +115,9 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
-<tr>
-<td align="center">⏳ <b>Day 4</b><br><sub>22 Feb 2026</sub></td>
-<td>
+<tr style="background-color: #fff3e0;">
+<td align="center" style="background-color: #fff3e0;">⏳ <b>Day 4</b><br><sub>22 Feb 2026</sub></td>
+<td style="background-color: #fff3e0;">
 
 - 📌 Added User Case 4 with feature to have a YARDS and CENTIMETERS conversions logic. <br>
   [Generic Class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC4-YardEquality/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -132,9 +133,9 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
-<tr>
-<td align="center">⏳ <b>Day 5</b><br><sub>23 Feb 2026</sub></td>
-<td>
+<tr style="background-color: #e3f2fd;">
+<td align="center" style="background-color: #e3f2fd;">⏳ <b>Day 5</b><br><sub>23 Feb 2026</sub></td>
+<td style="background-color: #e3f2fd;">
 
 - 📌 Added User Case 6 with feature to have a generic class for length and centralised addition logic. <br>
   [Length Class with QuantityMeasurementApp class](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC6-UnitAddition/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -175,9 +176,9 @@ Perform operations on quantities with automatic unit handling
   [UC10-TEST CASES](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC10-Interface/src/test/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
 </td>
 </tr>
-<tr>
-<td align="center">⏳ <b>Day 6</b><br><sub>24 Feb 2026</sub></td>
-<td>
+<tr style="background-color: #fff3e0;">
+<td align="center" style="background-color: #fff3e0;">⏳ <b>Day 6</b><br><sub>24 Feb 2026</sub></td>
+<td style="background-color: #fff3e0;">
 
 - 📌 Added User Case 11 with feature to have a VOLUME Enum. <br>
   [GENERIC INTERFACE-VOLUME ENUM-QUANTITY CLASS](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC11-VolumeMeasurement/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -207,9 +208,9 @@ Perform operations on quantities with automatic unit handling
 
 </td>
 </tr>
-<tr>
-<td align="center">⏳ <b>Day 7</b><br><sub>27 Feb 2026</sub></td>
-<td>
+<tr style="background-color: #e3f2fd;">
+<td align="center" style="background-color: #e3f2fd;">⏳ <b>Day 7</b><br><sub>27 Feb 2026</sub></td>
+<td style="background-color: #e3f2fd;">
 
 - 📌 Added User Case 14 with feature to support Temperature measurement, implementing selective arithmetic constraints via Functional Interfaces and Lambda expressions. <br>
   [TemperatureUnit & Refactored Engine](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC14-TemperatureUnit/src/main/java/com/app/quantitymeasurementapp/QuantityMeasurementApp)
@@ -220,9 +221,9 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
-<tr>
-<td align="center">⏳ <b>Day 8</b><br><sub>13 March 2026</sub></td>
-<td>
+<tr style="background-color: #fff3e0;">
+<td align="center" style="background-color: #fff3e0;">⏳ <b>Day 8</b><br><sub>13 March 2026</sub></td>
+<td style="background-color: #fff3e0;">
 
 - 📌 Added Quantity measurement class with Feet inner class that contains the comparison logic. <br>
   [QuantityMeasurementApp](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC15-NTierArchitectureRefactoring/src/main/java/com/app/quantitymeasurementapp)
@@ -233,9 +234,9 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
-<tr>
-<td align="center">⏳ <b>Day 9</b><br><sub>16 March 2026</sub></td>
-<td>
+<tr style="background-color: #e3f2fd;">
+<td align="center" style="background-color: #e3f2fd;">⏳ <b>Day 9</b><br><sub>16 March 2026</sub></td>
+<td style="background-color: #e3f2fd;">
 
 - 📌 Added UC16 with full Database Integration using JDBC — complete N-Tier architecture with controller, service, repository, entity, exception, unit, and util packages. <br>
   [Full Source — UC16](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC16-DatabaseIntegrationWithJDBC/src/main/java/com/app/quantitymeasurementapp)
@@ -270,9 +271,9 @@ Perform operations on quantities with automatic unit handling
 <td colspan="2" align="center" style="padding: 20px; border-top: 3px solid #333; border-bottom: 3px solid #333;"><b>━━━━━━━━━━━━━━━━━</b></td>
 </tr>
 
-<tr>
-<td align="center">🚀 <b>Day 10</b><br><sub>19 March 2026</sub></td>
-<td>
+<tr style="background-color: #fff3e0;">
+<td align="center" style="background-color: #fff3e0;">🚀 <b>Day 10</b><br><sub>19 March 2026</sub></td>
+<td style="background-color: #fff3e0;">
 
 - 📌 Added UC17 with Spring Framework Integration — migrated from JDBC to Spring Boot with complete Spring ecosystem integration. <br>
   [Full Source — UC17](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/main/java/com/app/quantitymeasurementapp)
