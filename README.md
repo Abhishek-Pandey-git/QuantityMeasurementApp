@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-In%20Development-blue?style=for-the-badge)
 ![Type](https://img.shields.io/badge/Type-Personal%20Project-purple?style=for-the-badge)
 ![Progress](https://img.shields.io/badge/Progress-Daily%20Updates-orange?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-0.1.0-green?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-0.17.0-green?style=for-the-badge)
 
 </div>
 
@@ -266,8 +266,12 @@ Perform operations on quantities with automatic unit handling
 </td>
 </tr>
 
+<tr style="background-color: #f0f0f0;">
+<td colspan="2" align="center" style="padding: 20px; border-top: 3px solid #333; border-bottom: 3px solid #333;"><b>━━━━━━━━━━━━━━━━━</b></td>
+</tr>
+
 <tr>
-<td align="center">⏳ <b>Day 10</b><br><sub>19 March 2026</sub></td>
+<td align="center">🚀 <b>Day 10</b><br><sub>19 March 2026</sub></td>
 <td>
 
 - 📌 Added UC17 with Spring Framework Integration — migrated from JDBC to Spring Boot with complete Spring ecosystem integration. <br>
