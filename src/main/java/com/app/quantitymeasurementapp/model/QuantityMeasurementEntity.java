@@ -157,10 +157,12 @@ public class QuantityMeasurementEntity {
         if (thisQuantity != null) {
             this.thisValue = thisQuantity.value;
             this.thisUnit = thisQuantity.unit.toString();
+            this.thisMeasurementType = thisQuantity.unit.getClass().getSimpleName();
         }
         if (thatQuantity != null) {
             this.thatValue = thatQuantity.value;
             this.thatUnit = thatQuantity.unit.toString();
+            this.thatMeasurementType = thatQuantity.unit.getClass().getSimpleName();
         }
         this.operation = operation;
         this.errorMessage = errorMessage;
