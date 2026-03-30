@@ -30,6 +30,31 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+		<!-- JWT Dependencies -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.12.6</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.12.6</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.12.6</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-h2console</artifactId>
@@ -88,6 +113,34 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- 
+    Spring Boot OAuth2 Client
+    
+    This dependency provides everything needed for OAuth2 "Login with Google/GitHub/etc."
+    
+    What it includes:
+    - OAuth2 authorization code flow handling
+    - Automatic redirect to OAuth providers
+    - Token exchange (authorization code → access token)
+    - User info fetching from OAuth providers
+    - Integration with Spring Security
+    
+    Without this, we'd have to manually:
+    - Build authorization URLs
+    - Handle callbacks
+    - Exchange codes for tokens
+    - Parse user info responses
+    
+    Spring Boot auto-configures everything based on application.yaml settings.
+    
+    @since UC18 - Google OAuth Authentication
+-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-oauth2-client</artifactId>
+</dependency>
+
 	</dependencies>
 
 	<build>
