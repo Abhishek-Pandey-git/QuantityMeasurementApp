@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-In%20Development-blue?style=for-the-badge)
 ![Type](https://img.shields.io/badge/Type-Personal%20Project-purple?style=for-the-badge)
 ![Progress](https://img.shields.io/badge/Progress-Daily%20Updates-orange?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-0.17.0-green?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-0.18.0-green?style=for-the-badge)
 
 </div>
 ---
@@ -24,22 +24,28 @@ The **Quantity Measurement App** is an intelligent application designed to compa
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### 🔄 Comparison
 Compare two quantities of the same type using different units with precision
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 ### 🔁 Conversion
 Convert values from one unit to another within the same measurement type
 
 </td>
-<td width="34%" valign="top">
+<td width="25%" valign="top">
 
 ### ➕ Arithmetic
 Perform operations on quantities with automatic unit handling
+
+</td>
+<td width="25%" valign="top">
+
+### 🔐 Authentication
+Secure JWT-based authentication with Google OAuth2 integration
 
 </td>
 </tr>
@@ -323,6 +329,51 @@ Perform operations on quantities with automatic unit handling
 
 - 📌 Created comprehensive test suite with `ApplicationTests.java` and `QuantityMeasurementServiceImplTest.java` validating service functionality. <br>
   [Test Layer](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC17-SpringFrameworkIntegration/src/test/java/com/app/quantitymeasurementapp)
+
+</td>
+</tr>
+
+<tr style="background-color: #e3f2fd;">
+<td align="center" style="background-color: #e3f2fd;">🔐 <b>Day 11</b><br><sub>30 March 2026</sub></td>
+<td style="background-color: #e3f2fd;">
+
+- 📌 Added UC18 with JWT Authentication and Google OAuth2 Integration — comprehensive security layer with token-based authentication. <br>
+  [Full Source — UC18](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth)
+
+<hr>
+
+- 📌 Added complete authentication module with `AuthController.java` providing REST endpoints for login, registration, token refresh, and OAuth2 callback handling. <br>
+  [Auth Controller](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/blob/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth/controller/AuthController.java)
+
+<hr>
+
+- 📌 Created comprehensive DTO layer with `AuthResponse`, `LoginRequest`, `RegisterRequest`, and `RefreshTokenRequest` for secure data transfer. <br>
+  [Auth DTOs](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth/dto)
+
+<hr>
+
+- 📌 Implemented JWT security with `JwtService.java` for token generation/validation, `JwtAuthenticationFilter.java` for request filtering, and `RefreshTokenService.java` for token refresh management. <br>
+  [JWT Services](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth/service)
+
+<hr>
+
+- 📌 Added Google OAuth2 integration with `CustomOAuth2UserService.java`, `OAuth2LoginSuccessHandler.java`, and `OAuth2LoginFailureHandler.java` for seamless social authentication. <br>
+  [OAuth2 Handlers & Services](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth/handler)
+
+<hr>
+
+- 📌 Enhanced entity layer with `User.java` supporting both local and OAuth2 providers, `RefreshToken.java` for token management, and `AuthProvider.java` enum for provider types. <br>
+  [Auth Entities](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth/entity)
+
+<hr>
+
+- 📌 Updated Spring Security configuration with JWT and OAuth2 integration, API documentation with OpenAPI security schemes, and comprehensive exception handling for authentication flows. <br>
+  [Security Config](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/blob/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/config/SecurityConfig.java) | [OpenAPI Config](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/blob/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/config/OpenApiConfig.java)
+
+<hr>
+
+- 📌 Implemented complete repository layer with `UserRepository.java` and `RefreshTokenRepository.java` for secure user and token data persistence. <br>
+  [Auth Repositories](https://github.com/Abhishek-Pandey-git/QuantityMeasurementApp/tree/feature/UC18-JWTandGoogleAunthentication/src/main/java/com/app/quantitymeasurementapp/auth/repository)
 
 </td>
 </tr>
