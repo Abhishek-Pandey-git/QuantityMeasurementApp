@@ -12,6 +12,7 @@ import io.swagger.v3.oas.annotations.info.Info;
  * It enables auto-configuration, component scanning, and 
  * provides metadata for the OpenAPI/Swagger documentation.
  */
+
 @SpringBootApplication
 @OpenAPIDefinition(
     info = @Info(
