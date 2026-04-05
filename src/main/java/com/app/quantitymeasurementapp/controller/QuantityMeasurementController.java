@@ -8,6 +8,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -78,24 +79,28 @@ public class QuantityMeasurementController {
 
     @GetMapping("/history/operation/{operation}")
     @Operation(summary = "Get a history of all calculations for a specific operation (e.g., ADD, CONVERT)")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<List<QuantityMeasurementDTO>> getOperationHistory(@PathVariable String operation) {
         return ResponseEntity.ok(service.getOperationHistory(operation));
     }
 
     @GetMapping("/history/type/{type}")
     @Operation(summary = "Get a history of all calculations for a specific measurement type (e.g., LengthUnit)")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<List<QuantityMeasurementDTO>> getMeasurementsByType(@PathVariable String type) {
         return ResponseEntity.ok(service.getMeasurementsByType(type));
     }
 
     @GetMapping("/count/{operation}")
     @Operation(summary = "Get the total number of times a specific successful operation has occurred")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<Long> getOperationCount(@PathVariable String operation) {
         return ResponseEntity.ok(service.getOperationCount(operation));
     }
 
     @GetMapping("/history/errored")
     @Operation(summary = "Get a history of all operations that failed or threw exceptions")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<List<QuantityMeasurementDTO>> getErrorHistory() {
         return ResponseEntity.ok(service.getErrorHistory());
     }

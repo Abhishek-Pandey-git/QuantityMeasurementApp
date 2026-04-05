@@ -7,6 +7,7 @@ import java.nio.charset.StandardCharsets;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,6 +21,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Component
 public class OAuth2LoginFailureHandler extends SimpleUrlAuthenticationFailureHandler {
+
+    @Value("${app.frontend-base-url}")
+    private String frontendBaseUrl;
 
     /**
      * Called when OAuth2 authentication fails.
@@ -78,7 +82,7 @@ public class OAuth2LoginFailureHandler extends SimpleUrlAuthenticationFailureHan
      */
     private String buildErrorRedirectUrl(String errorMessage) {
         // Frontend callback endpoint
-        String baseUrl = "http://localhost:8080/oauth-callback.html";
+        String baseUrl = frontendBaseUrl + "/oauth-callback";
 
         // URL encode the error message
         String encodedError = URLEncoder.encode(errorMessage, StandardCharsets.UTF_8);

@@ -8,6 +8,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
 import com.app.quantitymeasurementapp.auth.entity.RefreshToken;
 import com.app.quantitymeasurementapp.auth.entity.User;
@@ -53,6 +54,9 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
     private final JwtService jwtService;
     private final RefreshTokenService refreshTokenService;
     private final UserRepository userRepository;
+
+    @Value("${app.frontend-base-url}")
+    private String frontendBaseUrl;
 
     /**
      * MAIN ENTRY POINT: Called by Spring after successful Google OAuth2 authentication.
@@ -152,7 +156,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
     //Helper function to build url
         private String buildRedirectUrl(String accessToken, String refreshToken, String email){
              // Redirect to React app OAuth callback handler
-            String baseUrl = "http://localhost:5175/oauth-callback";
+            String baseUrl = frontendBaseUrl + "/oauth-callback";
 
             //Encodig the url
             String encodedAccessToken = URLEncoder.encode(accessToken,StandardCharsets.UTF_8);

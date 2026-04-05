@@ -48,6 +48,5 @@ application.yaml
 !**/src/test/**/mvn/wrapper/maven-wrapper.jar   
 *.html
 static/
-.env
-.env.*
-.env.example
+application.yaml
+application.properties
