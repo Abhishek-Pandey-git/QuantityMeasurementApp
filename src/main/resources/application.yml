@@ -34,6 +34,7 @@ spring:
           google:
             client-id: ${GOOGLE_CLIENT_ID}
             client-secret: ${GOOGLE_CLIENT_SECRET}
+            redirect-uri: https://believable-empathy-production-d850.up.railway.app/login/oauth2/code/google
             scope:
               - email
               - profile
@@ -63,4 +64,5 @@ app:
 # Server Configuration
 server:
   port: ${PORT:8080}
+  forward-headers-strategy: native
   
